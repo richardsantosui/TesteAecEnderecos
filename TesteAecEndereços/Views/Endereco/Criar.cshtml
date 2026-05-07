@@ -1,0 +1,30 @@
+﻿@model TesteAecEnderecos.Models.Endereco
+
+@{
+    ViewData["Title"] = "Novo Endereço";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 shadow p-4 rounded">
+            <h3>Cadastrar Novo Endereço</h3>
+            <hr />
+            <form action="/Endereco/Salvar" method="post">
+                <div class="mb-3">
+                    <label class="form-label">CEP</label>
+                    <input type="text" name="Cep" class="form-control" required />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Logradouro</label>
+                    <input type="text" name="Logradouro" class="form-control" required />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Cidade</label>
+                    <input type="text" name="Cidade" class="form-control" required />
+                </div>
+                <button type="submit" class="btn btn-success w-100">Salvar Endereço</button>
+                <a href="/Endereco" class="btn btn-link w-100 mt-2">Voltar</a>
+            </form>
+        </div>
+    </div>
+</div>

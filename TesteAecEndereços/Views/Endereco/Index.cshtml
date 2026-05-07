@@ -1,0 +1,55 @@
+﻿@model IEnumerable<TesteAecEnderecos.Models.Endereco>
+
+@{
+    ViewData["Title"] = "Gestão de Endereços";
+}
+
+<div class="container mt-5">
+    <div class="card shadow">
+        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+            <h4 class="mb-0">Meus Endereços</h4>
+            <a href="/Endereco/Criar" class="btn btn-light btn-sm">Adicionar Novo</a>
+        </div>
+        <div class="card-body">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>CEP</th>
+                        <th>Logradouro</th>
+                        <th>Cidade</th>
+                        <th style="width: 150px;">Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model != null && Model.Any())
+                    {
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.Cep</td>
+                                <td>@item.Logradouro</td>
+                                <td>@item.Cidade</td>
+                                <td>
+                                    <div class="btn-group">
+                                        <button class="btn btn-sm btn-info">Ver</button>
+                                        <a href="/Endereco/Excluir/@item.Id" 
+                                           class="btn btn-sm btn-danger" 
+                                           onclick="return confirm('Tem certeza que deseja excluir este endereço?')">
+                                           Excluir
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="4" class="text-center text-muted">Nenhum endereço cadastrado no banco.</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
