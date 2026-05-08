@@ -1,19 +1,23 @@
 Projeto: Gerenciamento de Endereços (Teste Técnico AEC)
-Este projeto foi desenvolvido como solução para o teste prático da AEC para a posição de Desenvolvedor C#. A aplicação consiste em uma plataforma funcional para o gerenciamento de endereços, integrando autenticação de usuários e operações completas de CRUD.
+Sobre o Projeto
+
+Este projeto foi desenvolvido como solução para o teste técnico da AEC para a vaga de Desenvolvedor C#. A aplicação consiste em uma plataforma de gerenciamento de endereços com autenticação de usuários e operações de CRUD.
 
 Arquitetura e Tecnologias
-Optei pelo uso do ASP.NET Core MVC para garantir uma separação clara de responsabilidades. No backend, utilizei o SQL Server com ADO.NET para o gerenciamento de dados. A escolha pelo ADO.NET permitiu um controle mais granular sobre as consultas e a autenticação, garantindo performance e segurança na manipulação dos registros.
 
-Na interface, utilizei Razor Views em conjunto com Bootstrap 5, focando em uma experiência de usuário limpa, responsiva e de fácil navegação. Todo o desenvolvimento foi realizado no ecossistema do Visual Studio 2022.
+O projeto foi desenvolvido utilizando ASP.NET Core MVC, seguindo a separação entre Models, Views e Controllers para melhor organização e manutenção do código.
+
+No backend, foi utilizado SQL Server com ADO.NET para gerenciamento e manipulação dos dados. A escolha do ADO.NET teve como objetivo permitir maior controle sobre as consultas SQL e integração direta com o banco de dados.
+
+No frontend, foram utilizadas Razor Views juntamente com Bootstrap 5, permitindo uma interface responsiva, organizada e de fácil navegação.
+
+O desenvolvimento foi realizado no Visual Studio 2022.
 
 Funcionalidades Implementadas
-Controle de Acesso: Sistema de login integrado ao banco de dados para validação de usuários.
-
-Gestão de Endereços: CRUD completo (Criação, Leitura e Exclusão) de registros.
-
-Estrutura MVC: Organização rigorosa entre Models (entidades), Views (interface dinâmica) e Controllers (regras de negócio e roteamento).
-
-Recursos Estáticos: Gerenciamento centralizado de scripts, CSS e bibliotecas na pasta wwwroot.
-
+Sistema de autenticação integrado ao banco de dados para validação de usuários.
+CRUD de endereços com funcionalidades de cadastro, listagem e exclusão de registros.
+Estrutura MVC organizada entre Controllers, Models e Views.
+Gerenciamento de arquivos estáticos utilizando a pasta wwwroot.
 Configuração Local
-Para executar o projeto, é necessário configurar uma instância do SQL Server. Um ponto importante: a connection string deve ser ajustada para apontar para o seu ambiente local — preferencialmente centralizada no arquivo de configuração ou diretamente nas classes de acesso a dados para este teste.
+
+Para executar o projeto localmente, é necessário possuir uma instância do SQL Server configurada. A connection string deve ser ajustada para apontar para o ambiente local utilizado nos testes.
