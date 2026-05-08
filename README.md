@@ -1,26 +1,13 @@
-Teste Prático para a AEC — Desenvolvedor C#
-Sobre o Projeto
+O projeto foi desenvolvido como solução para o teste prático da AEC para a vaga de Desenvolvedor C#. A proposta da aplicação é oferecer uma plataforma simples de gerenciamento de endereços, contando com autenticação de usuários e operações básicas de manipulação de dados.
 
-O projeto foi desenvolvido como solução para o teste prático da AEC para a vaga de Desenvolvedor C#. O sistema consiste em uma plataforma de gestão de endereços com autenticação de usuários.
+O desenvolvimento foi realizado utilizando ASP.NET Core MVC no backend, aplicando a estrutura padrão do framework para separação das responsabilidades da aplicação. O banco de dados utilizado foi o SQL Server, com integração feita através do ADO.NET para realização das consultas, autenticação dos usuários e manipulação dos registros cadastrados.
 
-Tecnologias Utilizadas
-Backend: ASP.NET Core MVC
-Banco de Dados: SQL Server utilizando ADO.NET
-Frontend: HTML, Razor Views e Bootstrap 5
-Ferramenta de Desenvolvimento: Visual Studio 2022
-Funcionalidades Implementadas
-Sistema de autenticação com validação integrada ao banco de dados.
-CRUD de endereços com cadastro, listagem e exclusão de registros.
-Interface responsiva e organizada utilizando Bootstrap 5.
-Configuração do Projeto
+Na parte visual, foram utilizados HTML, Razor Views e Bootstrap 5, permitindo a criação de uma interface responsiva, organizada e de fácil navegação. O projeto foi desenvolvido no Visual Studio 2022.
 
-Para executar o projeto localmente, é necessário configurar a conexão com o SQL Server e alterar a connection string nos Controllers para apontar para o banco de dados local.
+Entre as funcionalidades implementadas estão o sistema de login integrado ao banco de dados, permitindo validação de acesso dos usuários, além do CRUD de endereços, onde é possível cadastrar, visualizar e excluir registros. A aplicação também conta com organização estrutural baseada no padrão MVC, separando Controllers, Models e Views para facilitar manutenção, leitura e escalabilidade do código.
 
-Estrutura do Projeto
-Controllers: responsáveis pelas regras de negócio e rotas.
-Models: responsáveis pelas entidades do sistema.
-Views: interface da aplicação utilizando Razor.
-wwwroot: arquivos estáticos como CSS, JavaScript e bibliotecas.
-Observações
+Os Controllers ficaram responsáveis pelo controle das rotas, validações e regras de negócio da aplicação. Os Models representam as entidades utilizadas no sistema e auxiliam na organização dos dados. Já as Views foram utilizadas para construção da interface com Razor, permitindo integração dinâmica entre frontend e backend. A pasta wwwroot foi utilizada para armazenar arquivos estáticos como folhas de estilo, scripts JavaScript e bibliotecas auxiliares.
 
-O desenvolvimento foi realizado com foco em organização, clareza do código e aplicação das práticas básicas do ASP.NET Core MVC.
+Para execução local do projeto, é necessário configurar uma instância do SQL Server e ajustar a connection string presente nos Controllers para apontar corretamente para o banco de dados utilizado no ambiente local.
+
+O desenvolvimento foi realizado buscando manter uma estrutura limpa, organizada e funcional, aplicando conceitos básicos do ASP.NET Core MVC, integração com banco de dados e boas práticas de organização de projeto.
